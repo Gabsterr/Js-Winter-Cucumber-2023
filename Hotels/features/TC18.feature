@@ -1,17 +1,17 @@
-Launch Hotels.com
+# Launch Hotels.com
 
-Click on Travelers
+# Click on Travelers
 
-Select “Adults as 6
+# Select “Adults as 6
 
-Select “Children” as 3
+# Select “Children” as 3
 
-Select first child age: 4
+# Select first child age: 4
 
-Select second child age: Under 1
+# Select second child age: Under 1
 
-Select third child age: 7
+# Select third child age: 7
 
-Click Done
+# Click Done
 
-Verify total number of Travelers is sum of adults and children as same as selected on step #3 and #4.
+# Verify total number of Travelers is sum of adults and children as same as selected on step #3 and #4.

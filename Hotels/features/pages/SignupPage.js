@@ -26,7 +26,7 @@ class SignupPage {
             const currentUrl = await browser.getUrl();
             console.log(`current url -> ${currentUrl}\n\n`);
             if (currentUrl.localeCompare('https://www.hotels.com/signup?&uurl=e3id%3Dredr%26rurl%3D%2F') === 0) {
-                break;                  
+                break;
             }
         }
         await $(this.enterInvalidEmailLocator).waitForDisplayed();
@@ -55,21 +55,21 @@ class SignupPage {
             const currentUrl = await browser.getUrl();
             console.log(`current url -> ${currentUrl}\n\n`);
             if (currentUrl.localeCompare('https://www.hotels.com/signup?&uurl=e3id%3Dredr%26rurl%3D%2F') === 0) {
-                break;                  
+                break;
             }
         }
         await $(this.termsConditionsLocator).click();
 
     }
-   
-    async isTermsConditionsInNewTab() { 
+
+    async isTermsConditionsInNewTab() {
         const allHandles = await browser.getWindowHandles();
         for (const handle of allHandles) {
             await browser.switchToWindow(handle);
             const currentUrl = await browser.getUrl();
             console.log(`current url -> ${currentUrl}\n\n`);
             if (currentUrl.localeCompare('https://www.hotels.com/lp/b/terms-of-service') === 0) {
-                break;                  
+                break;
             }
         }
         await $(this.termsConditionsNewTab).waitForDisplayed();
@@ -79,31 +79,31 @@ class SignupPage {
     async lastRevisedText() {   //(expected format: MM/dd/yy) Last revised: 01/01/23
         await $(this.lastRevisedTextLocator).isDisplayed();
         const lastRevisedTextValue = await $(this.lastRevisedTextLocator).getText(); //Last revised: 01/01/23
-        await lastRevisedTextValue.splice(0,13,0);
-   
+        await lastRevisedTextValue.splice(0, 13, 0);
+
     }
 
     async clickPrivacyStatementLink() {
         await $(this.privacyStatementLocator).click();
-   }
-    
-   async isPrvcyStmtOpeningNewTab() {
-    const allHandles = await browser.getWindowHandles();
+    }
+
+    async isPrvcyStmtOpeningNewTab() {
+        const allHandles = await browser.getWindowHandles();
         for (const handle of allHandles) {
             await browser.switchToWindow(handle);
             const currentUrl = await browser.getUrl();
             console.log(`current url -> ${currentUrl}\n\n`);
             if (currentUrl.localeCompare('https://www.hotels.com/customer_care/privacy.html?currency=USD&eapid=1&locale=en_US&pos=HCOM_US&siteid=300000001&tpid=3001') === 0) {
-                break;                  
+                break;
             }
         }
         await $(this.prvcyStmtNewTab).waitForDisplayed();
         return await $(this.prvcyStmtNewTab).isDisplayed();
+    }
+
+    async lastUpdatedDateFormat() {  // (expected format: dd MMMM, yyyy)
+        await $(this.lastUpdatedDateLocator).isDisplayed();
+
+    }
 }
-
-async lastUpdatedDateFormat() {  // (expected format: dd MMMM, yyyy)
-    await $(this.lastUpdatedDateLocator).isDisplayed();
-
-}
-
 module.exports = SignupPage;
