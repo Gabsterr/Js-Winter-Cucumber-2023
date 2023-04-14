@@ -3,6 +3,7 @@ const { expect } = require("chai");
 const SignupPage = require('../pages/SignupPage');
 const SigninPage = require('../pages/SigninPage');
 const Homepage = require('../pages/Homepage');
+const moment = require("moment");
 
 const signuppageobj = new SignupPage();
 const signinpageobj = new SigninPage();

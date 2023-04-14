@@ -10,6 +10,19 @@ const signinpageobj = new SigninPage();
 const homepageobj = new Homepage();
 
 
+
+Given(/^I am on hotels homepage$/, async function () {
+    await browser.url('/');
+});
+
+When(/^I click on SignIn link$/, async function () {
+    await signinpageobj.clickSignInLink(); 
+});
+
+When(/^I click on SignUp link$/, async function () {
+    await signuppageobj.clickSignupLink();
+});
+
 When(/^I click Terms and Conditions link$/, async function () {
      await signuppageobj.clickTermsConditionsLink();
 });
