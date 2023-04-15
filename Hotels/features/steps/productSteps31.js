@@ -10,7 +10,7 @@ const signinpageobj = new SigninPage();
 const homepageobj = new Homepage();
 
 
-Given(/^I am on hotels homepage$/, async function () {
+Given(/^I am on Hotels Homepage1$/, async function () {
     await browser.url('/');
 });
 
@@ -30,7 +30,7 @@ Then(/^I verify Español is displayed$/, async function () {
     await homepageobj.isEspanolDisplayed(); 
 });
 
-When(/^I click on Español language$/, async function () {
+When(/^I click on Espanol language$/, async function () {
     await homepageobj.clickEspanolLink(); 
 });
 

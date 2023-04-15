@@ -1,7 +1,7 @@
 Feature: Signup
 
 Scenario: Hotels: Verify error message for invalid data in SignUp form
-    Given I am on hotels homepage
+    Given I am on Hotels homepage
     When I click on SignIn link
     When I click on SignUp link
     When I enter "#!@###" as invalid email address

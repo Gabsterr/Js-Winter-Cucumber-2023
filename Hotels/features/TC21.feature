@@ -2,8 +2,8 @@ Feature: Hotels: Signin
 
 Background: User goes from Homepage to Signin Page
 
-Given I am on hotels homepage
-When I click on SignIn link
+Given I am on the hotels homepage
+When I click on Signin link
 
 Scenario: Hotels: Verify Verification message for invalid sign in credentials
 When I click on Sign in button

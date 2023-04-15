@@ -9,7 +9,7 @@ const signuppageobj = new SignupPage();
 const signinpageobj = new SigninPage();
 const homepageobj = new Homepage();
 
-Given(/^I am on hotels homepage$/, async function () {
+Given(/^I am on Hotels homepage$/, async function () {
     await browser.url('/');
 });
 

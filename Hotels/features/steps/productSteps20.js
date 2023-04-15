@@ -11,15 +11,15 @@ const homepageobj = new Homepage();
 
 
 
-Given(/^I am on hotels homepage$/, async function () {
+Given(/^I am on hotels Homepage$/, async function () {
     await browser.url('/');
 });
 
-When(/^I click on SignIn link$/, async function () {
+When(/^I click on SignIn Link$/, async function () {
     await signinpageobj.clickSignInLink(); 
 });
 
-When(/^I click on SignUp link$/, async function () {
+When(/^I click on SignUp Link$/, async function () {
     await signuppageobj.clickSignupLink();
 });
 
