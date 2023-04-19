@@ -21,7 +21,7 @@
   "dependencies": {
     "@wdio/cli": "^8.6.9",
     "chai": "^4.3.7",
-    "chromedriver": "^111.0.0",
+    "chromedriver": "^112.0.0",
     "moment": "^2.29.4"
   },
   "devDependencies": {
