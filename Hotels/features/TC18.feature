@@ -1,17 +1,14 @@
-# Launch Hotels.com
+Feature: Updating guests on Homepage
 
-# Click on Travelers
+  Background: User launches Hotels homepage
+    Given I launch Hotels homepage
 
-# Select “Adults as 6
-
-# Select “Children” as 3
-
-# Select first child age: 4
-
-# Select second child age: Under 1
-
-# Select third child age: 7
-
-# Click Done
-
-# Verify total number of Travelers is sum of adults and children as same as selected on step #3 and #4.
+  Scenario: Hotels : Verify user can update number of guests on Home page
+    When I click on Travelers
+    When I select Adults as 6
+    When I select Children as 3
+    When I select first child as age 4
+    When I select second child age under 1
+    When I select third child age 7
+    When I click Done
+    Then I verify total number of Travelers is sum of adults and children as same as selected on steps 3 and 4

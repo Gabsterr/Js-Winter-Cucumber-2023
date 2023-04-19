@@ -14,7 +14,7 @@ Given(/^I am on the hotels homepage$/, async function () {
 });
 
 When(/^I click on Signin link$/, async function () {
-    await signinpageobj.clickSignInLink(); 
+    await signinpageobj.clickSignInLink();
 });
 
 When(/^I click on Sign in button$/, async function () {

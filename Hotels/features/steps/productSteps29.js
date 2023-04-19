@@ -22,9 +22,12 @@ Then(/^I verify What would you like to list is displayed$/, async function () {
     await homepageobj.isWhtWldYuLikeToLstDisplayed();
 });
 
-Then(/^I verify Lodging and Private residence options are displayed$/, async function () {
-    await homepageobj.isLdgngPrvtResidenceDisplayed();
-    
+Then(/^I verify Lodging option is displayed$/, async function () {
+    await homepageobj.isLodgingDisplayed();
+});
+
+Then(/^I verify Private residence option is displayed$/, async function () {
+    await homepageobj.isPrvtResidenceDisplayed();
 });
 
 When(/^I click on Private residence$/, async function () {
@@ -63,7 +66,18 @@ When(/^I enter (.+) in address$/, async function (address) {
     await homepageobj.enterAddress(address);
 });
 
-When(/^I select (.+) from auto-suggestion$/, async function () {
+When(/^I select 1216 South Orange Blossom Trail, Orlando, FL, USA from auto-suggestion$/, async function () {
     await homepageobj.selectTypeheadMatch();//"1216 South Orange Blossom Trail, Orlando, FL, USA"]
 });
 
+Then(/^I verify graph is displayed$/, async function () {
+    await homepageobj.isGraphDisplayed();
+});
+
+Then(/^I verify pin in graph is displayed$/, async function () {
+    await homepageobj.isPinInGraphDisplayed();
+});
+
+Then(/^I verify Move the pin to adjust the location of your property is displayed below graph$/, async function () {
+    await homepageobj.isTextBelowGraphDisplayed();
+});

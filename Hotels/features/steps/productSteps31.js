@@ -15,33 +15,33 @@ Given(/^I am on Hotels Homepage1$/, async function () {
 });
 
 When(/^I click on English language link$/, async function () {
-    await homepageobj.clickEnglishLink(); 
+    await homepageobj.clickEnglishLink();
 });
 
 When(/^I select Español Estados Unidos in Language dropdown$/, async function () {
-    await homepageobj.clickEspanolDropdown(); 
+    await homepageobj.clickEspanolDropdown();
 });
 
 When(/^I click on Save button$/, async function () {
-    await homepageobj.clickSaveLanguage(); 
+    await homepageobj.clickSaveLanguage();
 });
 
 Then(/^I verify Español is displayed$/, async function () {
-    await homepageobj.isEspanolDisplayed(); 
+    await homepageobj.isEspanolDisplayed();
 });
 
 When(/^I click on Espanol language$/, async function () {
-    await homepageobj.clickEspanolLink(); 
+    await homepageobj.clickEspanolLink();
 });
 
 When(/^I select English United States in Language dropdown$/, async function () {
-    await homepageobj.clickEnglishDropdown(); 
+    await homepageobj.clickEnglishDropdown();
 });
 
 When(/^I click on Guardar button$/, async function () {
-    await homepageobj.clickGuardarLanguage(); 
+    await homepageobj.clickGuardarLanguage();
 });
 
 Then(/^I verify English is displayed$/, async function () {
-    await homepageobj.isEnglishDisplayed(); 
+    await homepageobj.isEnglishDisplayed();
 });
